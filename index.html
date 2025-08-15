@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+   <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Título otimizado para SEO -->
+  <title>Modelos de Landing Page com WhatsApp - Portfólio Germano Lucas</title>
+  
+  <!-- Metatags essenciais para SEO -->
+  <meta name="description" content="Landing Pages modernas com integração WhatsApp. Portfólio de sites responsivos desenvolvidos por Germano Lucas.">
+  <meta name="keywords" content="landing page, whatsapp, modelos de sites, portfólio, desenvolvimento web, HTML, CSS, JavaScript, Germano Lucas">
+  <meta name="author" content="Germano Lucas">
+  
+  <!-- Favicon mantido conforme seu original -->
+  <link rel="shortcut icon" href="favcon/favcon.ico.png" type="image/x-icon">
+  
+  <!-- Open Graph / Redes Sociais -->
+  <meta property="og:title" content="Modelos de Landing Page com WhatsApp - Portfólio Germano Lucas">
+  <meta property="og:description" content="Landing Pages otimizadas com integração WhatsApp. Veja portfólio completo de desenvolvimento web.">
+  <meta property="og:image" content="https://seudominio.com/imagem-destaque.png">
+  <meta property="og:url" content="https://seudominio.com">
+  <meta property="og:type" content="website">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Modelos de Landing Page com WhatsApp - Portfólio Germano Lucas">
+  <meta name="twitter:description" content="Landing Pages responsivas com integração WhatsApp. Confira portfólio de desenvolvimento web.">
+  <meta name="twitter:image" content="https://seudominio.com/imagem-destaque.png">
+  
+  <!-- Fontes e Ícones (mantidos conforme seu original) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+
+  <!-- Canonical URL (recomendado) -->
+  <link rel="canonical" href="https://seudominio.com">
+
+>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --whatsapp: #25D366;
+            --gold: #d4af37;
+            --restaurant: #e74c3c;
+            --fashion: #9b59b6;
+            --fitness: #1abc9c;
+            --beauty: #e84393;
+            --dental: #3498db;
+            --pizza: #f39c12;
+            --light: #f8f9fa;
+            --dark: #212529;
+            --gray: #6c757d;
+            --transition: all 0.3s ease;
+            --shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            --border-radius: 12px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e7f1 100%);
+            color: var(--dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary), #1a2530);
+            color: white;
+            padding: 100px 0 120px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=1950') no-repeat center center/cover;
+            opacity: 0.15;
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            font-weight: 800;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .subtitle {
+            font-size: 1.3rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+            opacity: 0.9;
+        }
+
+        .whatsapp-highlight {
+            display: inline-block;
+            background: var(--whatsapp);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 30px;
+            margin: 0 5px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+            position: relative;
+            padding-top: 80px;
+        }
+
+        .section-title h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.8rem;
+            margin-bottom: 15px;
+            color: var(--primary);
+        }
+
+        .section-title p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+            color: var(--gray);
+        }
+
+        .models-container {
+            padding: 50px 0 100px;
+        }
+
+        .models-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .model-card {
+            background: white;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .model-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .model-preview {
+            position: relative;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .model-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .model-card:hover .model-image {
+            transform: scale(1.05);
+        }
+
+        .model-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, rgba(0,0,0,0.7), transparent 60%);
+            display: flex;
+            align-items: flex-end;
+            padding: 20px;
+        }
+
+        .model-info {
+            color: rgb(255, 255, 255);
+            width: 100%;
+        }
+
+        .model-info h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .model-info p {
+            font-size: 0.95rem;
+            opacity: 0.9;
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background: var(--secondary);
+            color: white;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 7px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-whatsapp {
+            background: var(--whatsapp);
+        }
+
+        .btn-whatsapp:hover {
+            background: #128C7E;
+        }
+
+        .model-features {
+            padding: 20px;
+        }
+
+        .feature-list {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+
+        .feature-list li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+            font-size: 0.9rem;
+        }
+
+        .feature-list li i {
+            color: var(--whatsapp);
+            margin-right: 10px;
+            font-size: 1.1rem;
+        }
+
+        .whatsapp-integration {
+            background: rgba(37, 211, 102, 0.1);
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 600;
+            color: #128C7E;
+            font-size: 0.9rem;
+        }
+
+        .whatsapp-integration i {
+            margin-right: 5px;
+        }
+
+        /* Cores específicas para cada modelo */
+        .barbershop .model-overlay { background: linear-gradient(to top, rgba(212, 175, 55, 0.7), transparent 60%); }
+        .restaurant .model-overlay { background: linear-gradient(to top, rgba(231, 76, 60, 0.7), transparent 60%); }
+        .fashion .model-overlay { background: linear-gradient(to top, rgba(155, 89, 182, 0.7), transparent 60%); }
+        .trainer .model-overlay { background: linear-gradient(to top, rgba(26, 188, 156, 0.7), transparent 60%); }
+        .snackbar .model-overlay { background: linear-gradient(to top, rgba(52, 152, 219, 0.7), transparent 60%); }
+        .beauty .model-overlay { background: linear-gradient(to top, rgba(232, 67, 147, 0.7), transparent 60%); }
+        .dentist .model-overlay { background: linear-gradient(to top, rgba(41, 128, 185, 0.7), transparent 60%); }
+        .pizzeria .model-overlay { background: linear-gradient(to top, rgba(243, 156, 18, 0.7), transparent 60%); }
+
+        footer {
+            background: var(--primary);
+            color: white;
+            padding: 60px 0 30px;
+            text-align: center;
+        }
+
+        .footer-content {
+            margin-bottom: 40px;
+        }
+
+        .footer-content h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .footer-content p {
+            max-width: 600px;
+            margin: 0 auto 30px;
+            opacity: 0.8;
+        }
+
+        .whatsapp-footer {
+            display: inline-flex;
+            align-items: center;
+            background: var(--whatsapp);
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .whatsapp-footer i {
+            margin-right: 10px;
+            font-size: 1.5rem;
+        }
+
+        .copyright {
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+
+        @media (max-width: 992px) {
+            h1 {
+                font-size: 2.8rem;
+            }
+            
+            .section-title h2 {
+                font-size: 2.3rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 80px 0 100px;
+            }
+            
+            h1 {
+                font-size: 2.3rem;
+            }
+            
+            .subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .section-title h2 {
+                font-size: 2rem;
+            }
+            
+            .models-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .section-title {
+                padding-top: 60px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container header-content">
+            <h1>Modelos de Landing Pages</h1>
+            <p class="subtitle">Desenvolvimento rápido e profissional com integração completa via <span class="whatsapp-highlight">WhatsApp</span> para atendimento ao cliente</p>
+            <a href="#models" class="btn btn-whatsapp">Ver Modelos</a>
+        </div>
+    </header>
+
+    <!-- Seção de Modelos -->
+    <section id="models" class="models-container">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nossos Modelos Premium</h2>
+                <p>Landing pages otimizadas para conversão com atendimento direto pelo WhatsApp</p>
+            </div>
+
+            <div class="models-grid">
+                <!-- Barbearia -->
+                <div class="model-card barbershop">
+                    <div class="model-preview">
+                        <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=600&h=400" alt="Modelo Barbearia" class="model-image">
+                        <div class="model-overlay">
+                            <div class="model-info">
+                                <h3>Barbearia</h3>
+                                <p>Agendamentos direto pelo WhatsApp</p>
+                                <a href="https://barbearia-total.netlify.app/" class="btn">Ver ao vivo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="model-features">
+                        <ul class="feature-list">
+                            <li><i class="fab fa-whatsapp"></i> Agendamento pelo WhatsApp</li>
+                            <li><i class="fas fa-calendar-alt"></i> Horários disponíveis</li>
+                            <li><i class="fas fa-cut"></i> Serviços e preços</li>
+                            <li><i class="fas fa-images"></i> Galeria de trabalhos</li>
+                        </ul>
+                        <div class="whatsapp-integration">
+                            <i class="fab fa-whatsapp"></i> Integração completa com WhatsApp
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Restaurante -->
+                <div class="model-card restaurant">
+                    <div class="model-preview">
+                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&h=400" alt="Modelo Restaurante" class="model-image">
+                        <div class="model-overlay">
+                            <div class="model-info">
+                                <h3>Restaurante</h3>
+                                <p>Pedidos e reservas via WhatsApp</p>
+                                <a href="https://restaurantepecadodagula.netlify.app/" class="btn">Ver ao vivo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="model-features">
+                        <ul class="feature-list">
+                            <li><i class="fab fa-whatsapp"></i> Pedidos pelo WhatsApp</li>
+                            <li><i class="fas fa-utensils"></i> Cardápio digital</li>
+                            <li><i class="fas fa-bookmark"></i> Reservas online</li>
+                            <li><i class="fas fa-map-marker-alt"></i> Localização fácil</li>
+                        </ul>
+                        <div class="whatsapp-integration">
+                            <i class="fab fa-whatsapp"></i> Integração completa com WhatsApp
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Loja de Roupas -->
+                <div class="model-card fashion">
+                    <div class="model-preview">
+                        <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=600&h=400" alt="Modelo Loja de Roupas" class="model-image">
+                        <div class="model-overlay">
+                            <div class="model-info">
+                                <h3>Loja de Roupas</h3>
+                                <p>Pedidos direto pelo WhatsApp</p>
+                                <a href="https://azulfeitomar.netlify.app/" class="btn">Ver ao vivo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="model-features">
+                        <ul class="feature-list">
+                            <li><i class="fab fa-whatsapp"></i> Pedidos pelo WhatsApp</li>
+                            <li><i class="fas fa-tshirt"></i> Catálogo de produtos</li>
+                            <li><i class="fas fa-percent"></i> Promoções destacadas</li>
+                            <li><i class="fas fa-truck"></i> Informações de entrega</li>
+                        </ul>
+                        <div class="whatsapp-integration">
+                            <i class="fab fa-whatsapp"></i> Integração completa com WhatsApp
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Personal Trainer -->
+                <div class="model-card trainer">
+                    <div class="model-preview">
+                        <img src="https://plus.unsplash.com/premium_photo-1661580282598-6883482b4c8e?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGVyc29uYWwlMjB0cmFpbmVyfGVufDB8fDB8fHww" alt="Modelo Personal Trainer" class="model-image">
+                        <div class="model-overlay">
+                            <div class="model-info">
+                                <h3>Personal Trainer</h3>
+                                <p>Agendamentos direto pelo WhatsApp</p>
+                                <a href="https://sitepersonaltrainer.netlify.app/" class="btn">Ver ao vivo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="model-features">
+                        <ul class="feature-list">
+                            <li><i class="fab fa-whatsapp"></i> Agendamento pelo WhatsApp</li>
+                            <li><i class="fas fa-dumbbell"></i> Planos de treino</li>
+                            <li><i class="fas fa-video"></i> Aulas online</li>
+                            <li><i class="fas fa-medal"></i> Resultados de clientes</li>
+                        </ul>
+                        <div class="whatsapp-integration">
+                            <i class="fab fa-whatsapp"></i> Integração completa com WhatsApp
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lanchonete -->
+                <div class="model-card snackbar">
+                    <div class="model-preview">
+                        <img src="https://m.media-amazon.com/images/I/71DSVNs-n2S._UF894,1000_QL80_.jpg" alt="Modelo Lanchonete" class="model-image">
+                        <div class="model-overlay">
+                            <div class="model-info">
+                                <h3>Lanchonete</h3>
+                                <p>Pedidos rápidos via WhatsApp</p>
+                                <a href="https://burgerhouse2025.netlify.app/" class="btn">Ver ao vivo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="model-features">
+                        <ul class="feature-list">
+                            <li><i class="fab fa-whatsapp"></i> Pedidos pelo WhatsApp</li>
+                            <li><i class="fas fa-burger"></i> Cardápio visual</li>
+                            <li><i class="fas fa-bolt"></i> Promoções rápidas</li>
+                            <li><i class="fas fa-stopwatch"></i> Horário de funcionamento</li>
+                        </ul>
+                        <div class="whatsapp-integration">
+                            <i class="fab fa-whatsapp"></i> Integração completa com WhatsApp
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Salão de Beleza -->
+                <div class="model-card beauty">
+                    <div class="model-preview">
+                        <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=600&h=400" alt="Modelo Salão de Beleza" class="model-image">
+                        <div class="model-overlay">
+                            <div class="model-info">
+                                <h3>Salão de Beleza</h3>
+                                <p>Agendamentos direto pelo WhatsApp</p>
+                                <a href="https://rosaeglamour.netlify.app/" class="btn">Ver ao vivo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="model-features">
+                        <ul class="feature-list">
+                            <li><i class="fab fa-whatsapp"></i> Agendamento pelo WhatsApp</li>
+                            <li><i class="fas fa-spa"></i> Serviços e preços</li>
+                            <li><i class="fas fa-star"></i> Portfólio de trabalhos</li>
+                            <li><i class="fas fa-gift"></i> Promoções especiais</li>
+                        </ul>
+                        <div class="whatsapp-integration">
+                            <i class="fab fa-whatsapp"></i> Integração completa com WhatsApp
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dentista -->
+                <div class="model-card dentist">
+                    <div class="model-preview">
+                        <img src="https://st2.depositphotos.com/1371678/9634/i/450/depositphotos_96346704-stock-photo-dentist-examining-a-patients-teeth.jpg" alt="Modelo Dentista" class="model-image">
+                        <div class="model-overlay">
+                            <div class="model-info">
+                                <h3>Clínica Dentária</h3>
+                                <p>Agendamentos direto pelo WhatsApp</p>
+                                <a href="https://consultoriosorrisoperfeito.netlify.app/" class="btn">Ver ao vivo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="model-features">
+                        <ul class="feature-list">
+                            <li><i class="fab fa-whatsapp"></i> Agendamento pelo WhatsApp</li>
+                            <li><i class="fas fa-tooth"></i> Serviços odontológicos</li>
+                            <li><i class="fas fa-user-md"></i> Equipe especializada</li>
+                            <li><i class="fas fa-map-marker-alt"></i> Localização e contato</li>
+                        </ul>
+                        <div class="whatsapp-integration">
+                            <i class="fab fa-whatsapp"></i> Integração completa com WhatsApp
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pizzaria -->
+                <div class="model-card pizzeria">
+                    <div class="model-preview">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmVhBApdnVXk5lituoP4H5kNin4_KqNxqUZw&s" alt="Modelo Pizzaria" class="model-image">
+                        <div class="model-overlay">
+                            <div class="model-info">
+                                <h3>Pizzaria</h3>
+                                <p>Pedidos rápidos via WhatsApp</p>
+                                <a href="https://pizzariaexpress2025.netlify.app/" class="btn">Ver ao vivo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="model-features">
+                        <ul class="feature-list">
+                            <li><i class="fab fa-whatsapp"></i> Pedidos pelo WhatsApp</li>
+                            <li><i class="fas fa-pizza-slice"></i> Cardápio de pizzas</li>
+                            <li><i class="fas fa-fire"></i> Promoções quentes</li>
+                            <li><i class="fas fa-truck"></i> Delivery rápido</li>
+                        </ul>
+                        <div class="whatsapp-integration">
+                            <i class="fab fa-whatsapp"></i> Integração completa com WhatsApp
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h3>Pronto para impulsionar seu negócio?</h3>
+                <p>Nossos modelos são totalmente personalizáveis e prontos para uso imediato com integração WhatsApp</p>
+                
+                <a href="#" class="whatsapp-footer">
+                    <i class="fab fa-whatsapp"></i> Solicitar modelo pelo WhatsApp
+                </a>
+            </div>
+            <div class="copyright">
+                &copy; 2023 Modelos de Landing Pages. Todos os direitos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Efeito de scroll suave
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Animação ao rolar
+        const fadeElements = document.querySelectorAll('.model-card');
+        
+        const observerOptions = {
+            threshold: 0.15,
+            rootMargin: "0px 0px -100px 0px"
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = "1";
+                    entry.target.style.transform = "translateY(0)";
+                }
+            });
+        }, observerOptions);
+
+        fadeElements.forEach(card => {
+            card.style.opacity = "0";
+            card.style.transform = "translateY(30px)";
+            card.style.transition = "opacity 0.6s ease, transform 0.6s ease";
+            observer.observe(card);
+        });
+
+        
+    </script>
+</body>
+</html>
