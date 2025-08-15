@@ -293,6 +293,38 @@
         .dentist .model-overlay { background: linear-gradient(to top, rgba(41, 128, 185, 0.7), transparent 60%); }
         .pizzeria .model-overlay { background: linear-gradient(to top, rgba(243, 156, 18, 0.7), transparent 60%); }
 
+        .whatsapp-float {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 40px;
+        right: 40px;
+        background-color: #25d366;
+        color: #FFF;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+        z-index: 100;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation: pulse 1.5s infinite;
+        transition: all 0.3s ease;
+        }
+
+        .whatsapp-float:hover {
+            background-color: #128C7E;
+            transform: scale(1.1);
+            box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.4);
+        }
+
+    @keyframes pulse {
+        0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+        70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+        100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+    }
+
         footer {
             background: var(--primary);
             color: white;
@@ -603,6 +635,14 @@
         </div>
     </section>
 
+    <!-- Botão Flutuante WhatsApp -->
+    <a href="https://wa.me/5585982170871?text=Olá!%20Gostaria%20de%20informações%20sobre%20criação%20de%20sites" 
+   target="_blank" 
+   class="whatsapp-float"
+   aria-label="Fale comigo no WhatsApp">
+   <i class="fab fa-whatsapp"></i>
+    </a>
+
     <!-- Rodapé -->
     <footer>
         <div class="container">
@@ -610,7 +650,7 @@
                 <h3>Pronto para impulsionar seu negócio?</h3>
                 <p>Nossos modelos são totalmente personalizáveis e prontos para uso imediato com integração WhatsApp</p>
                 
-                <a href="#" class="whatsapp-footer">
+                <a href="https://wa.me/5585982170871?text=%F0%9F%93%85%20Hor%C3%A1rio%20de%20atendimento%3A%0ASegunda%20a%20Sexta%20%7C%208h%20%C3%A0s%2018h%0A%0ASua%20mensagem%20%C3%A9%20muito%20importante.%20Responderei%20o%20mais%20breve%20poss%C3%ADvel%20dentro%20do%20meu%20hor%C3%A1rio%20comercial.%0A%0AEnquanto%20isso%2C%20conhe%C3%A7a%20meus%20trabalhos%3A%0A%5BLink%20para%20seu%20portf%C3%B3lio%5D%0A%0AAtenciosamente%2C%0AGermano%20Lucas" class="whatsapp-footer">
                     <i class="fab fa-whatsapp"></i> Solicitar modelo pelo WhatsApp
                 </a>
             </div>
