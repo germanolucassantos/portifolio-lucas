@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://seusite.netlify.app/sitemap.xml
+Sitemap: https://portifoliositeslucas.netlify.app//sitemap.xml
